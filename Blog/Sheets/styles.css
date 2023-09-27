@@ -1,0 +1,345 @@
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+    border-color: #888;
+    border-style: solid;
+    border-width: 0px 0px 0px 2px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  /*    end*/
+  *{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+.current{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 251, 251, 0.507);
+}
+
+body{
+    margin: 0px;
+    border: 0px;
+    background-color: #87ceeb;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 1500px;
+}
+.navBarmain{
+    height: 100px;
+    width: 100vw;
+    margin-top: -17px;
+    position: fixed;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 100PX;
+}
+/*for the shrinking sa navbar ni*/
+.navbarshrink{
+    background-color: white;
+    height: 98px;
+    transition: all 0.3s ease 0s;
+    border-width: 0px 0px 2px 0px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid;
+    border-color: #555;
+    z-index: 1;
+}
+.navbarshrink .navigations li{
+    margin-top: 35px;
+}
+.navbarshrink .navigations li:hover{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbarshrink .navigations li a{
+    padding: 20px;
+    padding-bottom: 21px;
+    border-radius: 0px;
+    color: black;
+    transition: all 0.1s ease 0s;
+}
+.navbarshrink .navigations li a:hover{
+    color: gray;
+    border-width: 3px;
+    border-color: darkblue;
+    border-style: solid;
+    border-radius: 5px;
+}
+.navbarshrink .current{
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 0px 0px 5px 0px;
+}
+.navbarshrink .current:hover{
+    border-width: 3px;
+}
+.navbarshrink .Logo .h21{
+    margin-top: 35px;
+    color: darkblue;
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+.navbarshrink .Logo .h22{
+    margin-top: 35px;
+    color: black;
+    background-color: white;
+}
+
+/*end*/
+/*Logo*/
+.Logo{
+    display: inline;
+    margin-top: 20px;
+    margin: 15px;
+    padding: 20px;
+    margin-top: 13px;
+    margin-left: 80px;
+}
+
+.h21{
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(3, 3, 3);
+    display: inline-block;
+    margin-top: 35px;  
+    transition: all 0.3s ease 0s;
+}
+.h22{
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: skyblue;
+    display: inline-block;
+    margin-top: 35px;  
+    transition: all 0.3s ease 0s;
+    background-color: darkblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+/*ul na ni*/
+.navigations{
+    list-style: none;
+    float: right;
+    margin-right: 125px;
+    display: inline;
+    margin-top: 14px;
+}
+.navigations li{
+    display: inline-block;
+    margin: 15px;
+    margin-top: 35px;
+}
+.navigations li:hover{
+    margin: 15px;
+    margin-left: 13.5px;
+    margin-right: 13.5px;
+}
+.navigations li a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.3s ease 0s;
+    padding: 20px;
+    border-radius: 5px;
+}
+.current:hover{
+    border-color: darkblue;
+}
+.navigations li a:hover{
+    color: rgb(82, 82, 82);
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.header{
+    height: 230px;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: hidden;
+    background-image: url("../drawable/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner{
+    background-color: rgba(255, 255, 255, 0.671);
+    width: fit-content;
+    box-sizing: border-box;
+    height: fit-content;
+    padding: 15px;
+    margin-left: 100px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000000;  
+    animation: 0.7s ease-out 0s 1 slideinright;
+}
+@keyframes slideinright {
+    0%{transform: translatey(-25px);}
+    100%{transform: translatey(0);}
+}
+.header h1{
+    font-size: 50px;
+}
+
+section{
+    margin: 0px 100px;
+    background-color: aliceblue;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 1px;
+    padding-bottom: 100px;
+}
+
+/*Alvy*/
+.featured{ 
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+.featured h1{
+    font-size: 50px;
+}
+.Containerforweb{
+    overflow: scroll;
+    height: 750px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 30px;
+    overflow-x: hidden;
+    background-color: #94AFD3;
+}
+.button{
+    margin-top: -120px;
+    margin-left: 1440px;
+}
+.buttonlinkalvy{
+    height: 100px;
+    width: 180px;
+    margin-right: 40px;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+.buttonlinkalvy:hover{
+    opacity: 1.1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.container{
+    align-content: center;
+    width: 100%;
+    padding-left: 50x;
+}
+
+.container a{
+    margin: 0px;
+    padding: 0px;
+}
+.card{
+    height: 500px;
+    width: 400px;
+    box-sizing: border-box;
+    background-color: black;
+    display: inline-block;
+    margin: 100px;
+    border-radius: 30px;
+    padding: 50px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.card1
+{
+    margin: 100px 20px 100px 120px;
+    background-color: skyblue;
+}
+.card2{
+    margin: 100px 20px;
+    background-color: darkblue;
+}
+.card3{
+    margin: 100px 20px;
+    background-color: goldenrod;
+}
+.card4{
+    margin: 100px 100px 100px 50px;
+    background-color: rgb(212, 90, 90);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    margin-left: 0px;
+    transition: all 0.3s ease-in;
+    transition-delay: 0.4s;
+}
+.card:hover>img{
+    margin-left: -400px;
+    transition: all 0.3s ease-in;
+    transition-delay: 0.2s;
+}
+.card h1{
+    margin-top: 0px;
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+    transition-delay: 0.3s;
+}
+.card:hover>h1{
+    margin-top: -230px;
+}
+#Label{
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+    transition-delay: 0.3s;
+    font-size: 28px;
+    line-height: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.card:hover>#Label{
+    margin-top: 10px;
+}
+.card p{
+    font-size: 30px;
+    margin-top: 500px;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+    line-height: 35px;
+}
+.card:hover>p{
+    margin-top: 10px;
+}
+.footer{
+    height: 200px;
+    padding: 30px;
+    background-color: rgb(87, 165, 196);
+    box-shadow:#000000;
+}
+.buttonclickshow{
+    display: block;
+}
+a:hover{
+    cursor: pointer;
+}

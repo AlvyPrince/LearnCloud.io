@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="Sheets/styles.css">
+        <script src="Sheets/script.js"></script>
+        <link rel="script" href="Sheets/script.js">
+    </head>
+    <body>  
+        <nav class="navBarmain" id="mainNav">
+            <div class="Logo">
+                <h2 class="h21">Learn</h2><h2 class="h22">Cloud</h2>
+            </div>
+            <ul class="navigations">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../Features/Features.html">FEATURES</a></li>
+                <li><a href="../Blog/Blog.html">BLOG</a></li>
+                <li><a class="current" href="../About us/About.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <div id="about-us"class="wrapper">
+            <h1 style="margin-top: -600px; margin-left: 15px;">About us:</h1>
+            <a href="https://www.facebook.com/princealvy.maghanoy.9/" class="box" style="margin-left: -235px;">    
+              <div class="single-box">
+                <div class="box-content">
+                  <div class="sides side-1" style="background-image: url('drawable/mganawng/alvy\ \(2\).png');"></div>
+                  <div class="sides side-2">
+                    <div class="content">
+                      <h2>Prince Alvy O. Maghanoy</h2>
+                      <p>The Main Programmer Of the Team!!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/neoagujarr" class="box">
+              <div class="single-box">
+                <div class="box-content">
+                  <div class="sides side-1" style="background-image: url(drawable/mganawng/neo.png);"></div>
+                  <div class="sides side-2">
+                    <div class="content">
+                      <h2>Dave Wood</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur accusantium, maiores similique est aliquam laborum!</p>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-linkedin"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/dannah.sayaboc" class="box">
+              <div class="single-box">
+                <div class="box-content">
+                  <div class="sides side-1" style="background-image: url(drawable/mganawng/dax.png);"></div>
+                  <div class="sides side-2">
+                    <div class="content">
+                      <h2>Dave Wood</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur accusantium, maiores similique est aliquam laborum!</p>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-linkedin"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100075492201674" class="box">
+              <div class="single-box">  
+                <div class="box-content">
+                  <div class="sides side-1" style="background-image: url(drawable/mganawng/yuri.png);"></div>
+                  <div class="sides side-2">
+                    <div class="content">
+                      <h2>Larry Jones</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur accusantium, maiores similique est aliquam laborum!</p>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-linkedin"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <section class="commentsec">
+            <div id="respond">
+
+                <h3>Leave a Comment</h3>
+              
+                <form action="post_comment.php" method="post" id="commentform">
+              
+                  <label for="comment_author" class="required">Your name</label>
+                  <input style="font-size: 30px;" type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+              
+                  <label for="comment" class="required">Your message</label>
+                  <textarea style="font-size: 30px;" name="comment" id="commenting" rows="10" tabindex="4"  required="required"></textarea>
+              
+                  <!-- comment_post_ID value hard-coded as 1 -->
+                  <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+                  <input style="font-size: 30px;" name="submit" type="button" value="Submit comment" onclick="commentsubmit()"/>
+                </form>
+                
+                <div>
+                    <hr style="display: block;">
+                    <h2 style="font-size: 50px;">Comments:</h2>
+                    <div ID="comment" class="comment">                      
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <center>
+                <a href="https://web.facebook.com/">
+                    <img style="display: inline; margin: 0px 30px;" src="drawable/facebook.png" alt="Facebook" height="70px">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img style="display: inline; margin: 0px 30px;" src="drawable/Instagram.png" alt="Instagram" height="70px">
+                </a>
+                <a href="https://twitter.com/">
+                    <img style="display: inline; margin: 0px 30px;" src="drawable/twitter.png" alt="Twitter" height="70px">
+                </a>
+                <h2>Find more about us <a style="text-decoration: underline; color: blue;" href="../About us/About.html">here</a>!!</h2>
+                <p style="font-size: x-large;">No Copyright Infringement Intended.<br>Thank you for Viewing this Page.</p>
+            </center>
+        </footer>
+    </body>
+</html>

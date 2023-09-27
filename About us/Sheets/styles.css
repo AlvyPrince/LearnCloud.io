@@ -1,0 +1,327 @@
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+    border-color: #888;
+    border-style: solid;
+    border-width: 0px 0px 0px 2px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  /*    end*/
+  *{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+.current{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 251, 251, 0.507);
+}
+
+body{
+    margin: 0px;
+    border: 0px;
+    background-color: skyblue;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 1000px;
+}
+.navBarmain{
+    height: 100px;
+    width: 100vw;
+    margin-top: -17px;
+    position: fixed;
+    transition: all 0.3s ease 0s;
+}
+/*for the shrinking sa navbar ni*/
+.navbarshrink{
+    background-color: white;
+    height: 98px;
+    transition: all 0.3s ease 0s;
+    border-width: 0px 0px 2px 0px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid;
+    border-color: #555;
+    z-index: 1;
+}
+.navbarshrink .navigations li{
+    margin-top: 35px;
+}
+.navbarshrink .navigations li:hover{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbarshrink .navigations li a{
+    padding: 20px;
+    padding-bottom: 21px;
+    border-radius: 0px;
+    color: black;
+    transition: all 0.1s ease 0s;
+}
+.navbarshrink .navigations li a:hover{
+    color: gray;
+    border-width: 3px;
+    border-color: darkblue;
+    border-style: solid;
+    border-radius: 5px;
+}
+.navbarshrink .current{
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 0px 0px 5px 0px;
+}
+.navbarshrink .current:hover{
+    border-width: 3px;
+}
+.navbarshrink .Logo .h21{
+    margin-top: 35px;
+    color: darkblue;
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+.navbarshrink .Logo .h22{
+    margin-top: 35px;
+    color: black;
+    background-color: white;
+}
+
+/*end*/
+/*Logo*/
+.Logo{
+    display: inline;
+    margin-top: 20px;
+    margin: 15px;
+    padding: 20px;
+    margin-top: 13px;
+    margin-left: 80px;
+}
+
+.h21{
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(3, 3, 3);
+    display: inline-block;
+    margin-top: 35px;  
+    transition: all 0.3s ease 0s;
+}
+.h22{
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: skyblue;
+    display: inline-block;
+    margin-top: 35px;  
+    transition: all 0.3s ease 0s;
+    background-color: darkblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+/*ul na ni*/
+.navigations{
+    list-style: none;
+    float: right;
+    margin-right: 125px;
+    display: inline;
+}
+.navigations li{
+    display: inline-block;
+    margin: 15px;
+    margin-top: 35px;
+}
+.navigations li:hover{
+    margin: 15px;
+    margin-left: 13.5px;
+    margin-right: 13.5px;
+}
+.navigations li a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.3s ease 0s;
+    padding: 20px;
+    border-radius: 5px;
+}
+.current:hover{
+    border-color: darkblue;
+}
+.navigations li a:hover{
+    color: rgb(82, 82, 82);
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+#navbarNav .nav-link text-white{
+    text-transform: uppercase;
+}
+.wrapper{
+    min-height: 100vh;
+    background-image: url('../drawable/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    margin: 20px;
+}
+.single-box{
+    width: 400px;
+    height: 400px;
+    perspective: 1200px;
+}
+.box-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px);
+    transition: all 1s;
+}
+.sides{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.side-1{
+    transform: rotateY(0deg) translateZ(190px);
+    z-index: 2;
+    background-size: cover;
+    background-position: center center;
+}
+.side-2{
+    color: #fff;
+    background-color: deepskyblue;
+    transform: rotateY(90deg) translateZ(200px);
+}
+.box:hover .box-content{
+    transform: translateZ(-150px) rotateY(-90deg);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.content h2{
+    text-align: left;
+    font-family: alfa slab one;
+    font-size: 25px;
+    margin-left: 40px;
+}
+.content p{
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.socials{
+    margin-top: 30px;
+}
+.socials i{
+    margin: 0 15px;
+}
+
+@media (max-width:991px){
+    .wrapper{
+        flex-direction: column;
+    }
+}h1{
+    padding: 40px;
+    margin: 15px;
+    background-color: #8888887a;
+    border-radius: 30px;
+
+}
+.commentsec{
+    margin: 0px 100px;
+    background-color: aliceblue;
+    padding: 100px;
+    box-sizing: content-box;
+    height: 1000PX;
+
+}
+#respond {
+    margin-top: 40px;
+    height: 700px;
+    font-size: 30px;
+    box-sizing: border-box;
+  }
+  
+  #respond input[type='text']{
+    display: block;
+  }
+  #respond textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-size: 3 0px;
+  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+  
+    line-height: 1.4em;
+  } 
+.comment{
+    border-width: 2PX;
+    border-style: solid;
+    border-color: #000000;
+    overflow: scroll;
+    height: 500px;
+    width: 1650px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 30px;
+    overflow-x: hidden;
+    padding: 30px;
+    overflow-wrap: break-word;
+  }
+.comments{
+    padding: 0px 200px;
+}
+footer{
+    height: 200px;
+    padding: 30px;
+    background-color: rgb(87, 165, 196);
+    box-shadow:#000000;
+}
+.image{
+    float: left;
+}
+.Username{
+    font-size: 50px;
+    display: inline;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+.Commentcontent{
+    font-size: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 1200PX;
+    padding-left: 110px;
+}
